@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>WOW :: Meu Canal</title>
+  <title>WOW :: Canal OpenCaster</title>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <style>
     body {
       margin: 0;
-      background: #000;
+      background: #121212;
       color: #fff;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
     }
     header {
-      background: #ff6600;
-      padding: 15px;
+      background: linear-gradient(90deg, #ff6600, #ff3300);
+      padding: 20px;
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1.8em;
       font-weight: bold;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     }
     main {
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
       margin: 20px;
+      gap: 20px;
     }
     video {
-      width: 70%;
+      flex: 1 1 600px;
       max-width: 900px;
-      border: 3px solid #ff6600;
-      border-radius: 8px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
     }
     .chat {
-      width: 30%;
+      flex: 1 1 300px;
+      min-width: 300px;
       height: 500px;
-      margin-left: 20px;
-      border: 2px solid #444;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
     }
     footer {
-      background: #111;
-      padding: 15px;
+      background: #1f1f1f;
+      padding: 20px;
       text-align: center;
       font-size: 0.9em;
       color: #aaa;
+      margin-top: 30px;
+    }
+    footer p {
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -55,8 +62,8 @@
   <main>
     <video id="video" controls autoplay></video>
     <div class="chat">
-      <!-- Chat embutido (exemplo Chatango/Tawk.to) -->
-      <iframe src="https://chatango.com/iframe" width="100%" height="100%" frameborder="0"></iframe>
+      <!-- Chat embutido -->
+      <iframe src="https://chat-site-user-profi-ow5c.bolt.host" width="100%" height="100%" frameborder="0"></iframe>
     </div>
   </main>
 
@@ -73,13 +80,10 @@
   </script>
 
   <footer>
-    Este projeto é experimental e sem fins lucrativos.  
-    Todo o conteúdo pertence aos respectivos detentores de direitos.  
-    Caso algum titular solicite, o material será removido em até 24h.  
-    Apoie sempre as versões oficiais.
+    <p>Este projeto é experimental e sem fins lucrativos.</p>
+    <p>Todo o conteúdo pertence aos respectivos detentores de direitos.</p>
+    <p>Caso algum titular solicite, o material será removido em até 24h.</p>
+    <p>Apoie sempre as versões oficiais.</p>
   </footer>
-</body>
-</html>
-
 </body>
 </html>

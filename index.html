@@ -31,14 +31,28 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.7);
     }
+    .chat {
+      flex: 1 1 300px;
+      min-width: 300px;
+      height: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 30px;
+    }
     .identity {
       display: flex;
       align-items: center;
-      background: #2e0854; /* roxo estilo x1co */
+      justify-content: center;
       padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      width: 100%;
+      margin-top: 10px;
     }
     .identity img {
       width: 120px;
@@ -46,6 +60,7 @@
       border-radius: 50%;
       border: 4px solid #ff6600;
       margin-right: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
     }
     .info h1 {
       margin: 0;
@@ -68,44 +83,12 @@
     .social a:hover {
       text-decoration: underline;
     }
-    .chat {
-      flex: 1 1 300px;
-      min-width: 300px;
-      height: 500px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
-    }
-    footer {
-      background: #111;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #aaa;
-      margin-top: 30px;
-    }
   </style>
 </head>
 <body>
   <main>
     <div class="player-area">
       <video id="video" controls autoplay></video>
-
-      <!-- Identidade WOW estilo NickOnline -->
-      <div class="identity">
-        <img src="WOW (1).png" alt="Logo WOW">
-        <div class="info">
-          <h1>WOW</h1>
-          <p>WOW – canal fã revival experimental via OpenCaster</p>
-          <p class="tags">
-            #wow #opencaster #brasil #stream #24/7 #canal
-          </p>
-          <div class="social">
-            <a href="https://youtube.com" target="_blank">YouTube</a> |
-            <a href="https://twitch.tv" target="_blank">Twitch</a>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="chat">
@@ -132,5 +115,21 @@
     Caso algum titular solicite, o material será removido em até 24h.<br>
     Apoie sempre as versões oficiais.
   </footer>
+
+  <!-- Identidade WOW embaixo do footer -->
+  <div class="identity">
+    <img src="WOW (1).png" alt="Logo WOW">
+    <div class="info">
+      <h1>WOW</h1>
+      <p>Canal criado por Note (10 anos)</p>
+      <p class="tags">
+        #wow #opencaster #brasil #stream #24/7 #canal
+      </p>
+      <div class="social">
+        <a href="https://youtube.com" target="_blank">YouTube</a> |
+        <a href="https://twitch.tv" target="_blank">Twitch</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

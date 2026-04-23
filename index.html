@@ -1,57 +1,64 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Canal OpenCaster</title>
+  <title>WOW :: Meu Canal</title>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <style>
     body {
-      background: #0c0c0c;
+      margin: 0;
+      background: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
     }
     header {
       background: #ff6600;
       padding: 15px;
+      text-align: center;
       font-size: 1.5em;
       font-weight: bold;
     }
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 20px;
+    }
     video {
-      width: 80%;
+      width: 70%;
       max-width: 900px;
-      margin: 20px auto;
-      display: block;
       border: 3px solid #ff6600;
       border-radius: 8px;
     }
-    section {
-      margin: 30px auto;
-      width: 80%;
-      max-width: 900px;
-      text-align: left;
-    }
     .chat {
+      width: 30%;
+      height: 500px;
+      margin-left: 20px;
       border: 2px solid #444;
       border-radius: 8px;
-      height: 400px;
-      background: #1a1a1a;
       overflow: hidden;
     }
     footer {
-      background: #222;
+      background: #111;
       padding: 15px;
+      text-align: center;
       font-size: 0.9em;
       color: #aaa;
     }
   </style>
 </head>
 <body>
-  <header>📺 Meu Canal OpenCaster</header>
+  <header>📺 WOW :: Canal OpenCaster</header>
 
-  <video id="video" controls autoplay></video>
+  <main>
+    <video id="video" controls autoplay></video>
+    <div class="chat">
+      <!-- Chat embutido (exemplo Chatango/Tawk.to) -->
+      <iframe src="https://chatango.com/iframe" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+  </main>
 
   <script>
     const video = document.getElementById('video');
@@ -65,19 +72,14 @@
     }
   </script>
 
-  <section>
-    <h2>💬 Chat ao vivo</h2>
-    <div class="chat">
-      <!-- Exemplo: embed de Chatango ou Tawk.to -->
-      <iframe src="https://chatango.com/iframe" width="100%" height="100%" frameborder="0"></iframe>
-    </div>
-  </section>
-
   <footer>
     Este projeto é experimental e sem fins lucrativos.  
     Todo o conteúdo pertence aos respectivos detentores de direitos.  
     Caso algum titular solicite, o material será removido em até 24h.  
     Apoie sempre as versões oficiais.
   </footer>
+</body>
+</html>
+
 </body>
 </html>
